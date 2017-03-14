@@ -10,5 +10,5 @@ If you want to understand how the code works,  see here: https://realpython.com/
 
 Update: Now supports OpenCV3. This change has been made by furetosan ( https://github.com/furetosan) and tested on Linux.
 
-To run the OpenCV3 version, run webcam_cv3.py.
+To run the OpenCV3 version, run python webcam_cv3.py haarcascade_frontalface_default.xml
 
