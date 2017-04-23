@@ -3,7 +3,7 @@ import sys
 import logging as log
 import datetime as dt
 
-cascPath = sys.argv[1]
+cascPath = "haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 log.basicConfig(filename='webcam.log',level=log.INFO)
 
@@ -33,7 +33,7 @@ while True:
         log.info("faces: "+str(len(faces))+" at "+str(dt.datetime.now()))
 
     # Display the resulting frame
-    # cv2.imshow('Video', frame)
+    cv2.imshow('Video', frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
